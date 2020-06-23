@@ -18,6 +18,7 @@ import "./dist/Assets.js";
 // Import your web components here from the dist/ directory
 import "./dist/CustomTree.js";
 
+
 window.RenderScheduler = RenderScheduler;
 window["sap-ui-webcomponents-bundle"] = {
 	configuration: {
