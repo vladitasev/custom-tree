@@ -20,32 +20,38 @@
 	<script src="../../resources/bundle.esm.js" type="module"></script>
 	<script nomodule src="../../resources/bundle.es5.js"></script>
 
-    <style>
-        code { color: blue; font-size: small; }
-    </style>
 
 </head>
 
 <body>
-    <a href="?sap-ui-theme=sap_fiori_3">Fiori 3</a> |
-    <a href="?sap-ui-theme=sap_fiori_3_dark">Fiori 3 Dark</a> |
-    <a href="?sap-ui-theme=sap_belize">Belize</a> |
-    <a href="?sap-ui-theme=sap_belize_hcb">Belize High Contrast Black</a>
-    <br>
-    <span>or in the browser console, for example:</span>
-    <code>window['sap-ui-webcomponents-bundle'].configuration.setTheme("sap_belize_hcb")</code>
 
-    <br><br>
+    <ui5-custom-tree id="tree" no-data-text="No data" mode="MultiSelect">
+        <ui5-tree-item expanded text="Tree 1" selected>
+            <ui5-tree-item expanded text="Tree 1.1" selected>
+                <ui5-tree-item text="Tree 1.1.1"></ui5-tree-item>
+                <ui5-tree-item text="Tree 1.1.2"></ui5-tree-item>
+            </ui5-tree-item>
+        </ui5-tree-item>
 
-    <a href="?sap-ui-language=en">English</a> |
-    <a href="?sap-ui-language=de">German</a> |
-    <a href="?sap-ui-language=es">Spanish</a> |
-    <a href="?sap-ui-language=fr">French</a>
+        <ui5-tree-item text="Tree 2">
+            <ui5-tree-item text="Tree 2.1">
+                <ui5-tree-item text="Tree 2.1.1"></ui5-tree-item>
+                <ui5-tree-item text="Tree 2.1.2">
+                    <ui5-tree-item text="Tree 2.1.2.1"></ui5-tree-item>
+                    <ui5-tree-item text="Tree 2.1.2.2"></ui5-tree-item>
+                    <ui5-tree-item text="Tree 2.1.2.3"></ui5-tree-item>
+                    <ui5-tree-item text="Tree 2.1.2.5"></ui5-tree-item>
+                </ui5-tree-item>
+            </ui5-tree-item>
+            <ui5-tree-item text="Tree 2.2"></ui5-tree-item>
+        </ui5-tree-item>
 
-    <br><br>
+        <ui5-tree-item expanded text="Tree 3 (no icon)">
+        </ui5-tree-item>
 
-    <h1>Test your web components here</h1>
-    <ui5-custom-tree id="myFirstComponent"></ui5-custom-tree>
+    </ui5-custom-tree>
+
+
 </body>
 
 </html>
